@@ -6,9 +6,11 @@ import {
   ServerToClientEvents,
 } from "../../../types/events";
 import { CalculationResponse as CalculationResponse } from "../../../types/types";
+import { getErrorMessage } from "../../../helpers/utils";
 
 const isCalculationRequest = (command: string) => {
-  const calculationPattern = /^(\s*\d+\s*[\+\-\*\/]\s*)+\d+\s*$/;
+  const calculationPattern =
+    /^(\s*\d+([.,]\d+)?\s*[\+\-\*\/]\s*)+\d+([.,]\d+)?\s*$/;
   return calculationPattern.test(command);
 };
 
@@ -25,13 +27,9 @@ export const handleCalculationEvent = (
         socket.emit("result", result);
         logger.info(`Calculation result for ${message} is ${result}`);
       } catch (err: unknown) {
-        if (err instanceof Error) {
-          socket.emit("error", err.message);
-          logger.error(`Error occurred during calculation: ${err.message}`);
-        } else {
-          socket.emit("error", "An unknown error occurred");
-          logger.error("An unknown error occurred during calculation");
-        }
+        const message = getErrorMessage(err);
+        logger.error(`Error occurred during calculation: ${message}`);
+        socket.emit("error", message);
       }
     } else if (message.trim().toLowerCase() === "history") {
       logger.info(`Received calculation history request`);
@@ -42,13 +40,9 @@ export const handleCalculationEvent = (
         socket.emit("calculations", calculations);
         logger.info(`Calculations response is ${calculations}`);
       } catch (err: unknown) {
-        if (err instanceof Error) {
-          socket.emit("error", err.message);
-          logger.error(`Error occurred during calculation: ${err.message}`);
-        } else {
-          socket.emit("error", "An unknown error occurred");
-          logger.error("An unknown error occurred during calculation");
-        }
+        const message = getErrorMessage(err);
+        logger.error(`Error occurred during fetching calculations: ${message}`);
+        socket.emit("error", message);
       }
     } else {
       socket.emit(

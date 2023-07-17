@@ -9,27 +9,28 @@ export const performCalculation = async (
   try {
     const adjustedCalculation = calculation
       .replace(/÷/g, "/")
-      .replace(/×/g, " * ")
-      .replace(/x/g, " * ");
+      .replace(/×/g, "*")
+      .replace(/x/g, "*")
+      .replace(/,/g, ".");
 
     const result = evaluate(adjustedCalculation);
 
     logger.info(`Performed calculation: ${calculation} = ${result}`);
+
     const newCalculation = new Calculation({ calculation, result });
 
-    await newCalculation.save();
+    const savedCalculation = await newCalculation.save();
 
     logger.info(
       `Performed calculation: ${calculation} = ${result} has been saved`
     );
 
-    return newCalculation;
+    return savedCalculation as CalculationResponse;
   } catch (error: unknown) {
     if (error instanceof Error) {
       logger.error(
         `Error performing calculation: ${calculation}: ${error.message}`
       );
-
       throw error;
     }
     throw new Error("An unknown error occurred while performing calculation");
@@ -38,7 +39,10 @@ export const performCalculation = async (
 
 export const lastCalculations = async () => {
   try {
-    return await Calculation.find().sort({ date: -1 }).limit(10).exec();
+    return (await Calculation.find()
+      .sort({ date: -1 })
+      .limit(10)
+      .exec()) as CalculationResponse[];
   } catch (error: unknown) {
     if (error instanceof Error) {
       logger.error(`Error fetching calculation`);
