@@ -5,8 +5,15 @@ import {
   ClientToServerEvents,
   ServerToClientEvents,
 } from "../../../types/events";
-import { CalculationResponse as CalculationResponse } from "../../../types/types";
-import { getErrorMessage } from "../../../helpers/utils";
+import {
+  CalculationResponse as CalculationResponse,
+  CommandResponse,
+} from "../../../types/types";
+import {
+  UNKNOWN_COMMAND,
+  getErrorException,
+  getErrorMessage,
+} from "../../../helpers/utils";
 
 const isCalculationRequest = (command: string) => {
   const calculationPattern =
@@ -22,33 +29,41 @@ export const handleCalculationEvent = (
       logger.info(`Received calculation request: ${message}`);
 
       try {
-        const result: CalculationResponse = await performCalculation(message);
+        const response: CommandResponse = await performCalculation(message);
 
-        socket.emit("result", result);
-        logger.info(`Calculation result for ${message} is ${result}`);
+        socket.emit("calculations", response);
+
+        logger.info(`Calculation result for ${message} is ${response}`);
       } catch (err: unknown) {
-        const message = getErrorMessage(err);
-        logger.error(`Error occurred during calculation: ${message}`);
-        socket.emit("error", message);
+        const exception = getErrorException(message, err);
+
+        logger.error(`Error occurred during calculation: ${exception.error}`);
+
+        socket.emit("error", exception);
       }
     } else if (message.trim().toLowerCase() === "history") {
       logger.info(`Received calculation history request`);
 
       try {
-        const calculations: CalculationResponse[] = await lastCalculations();
+        const response: CommandResponse = await lastCalculations(message);
 
-        socket.emit("calculations", calculations);
-        logger.info(`Calculations response is ${calculations}`);
+        socket.emit("calculations", response);
+
+        logger.info(`Calculations response is ${response}`);
       } catch (err: unknown) {
-        const message = getErrorMessage(err);
-        logger.error(`Error occurred during fetching calculations: ${message}`);
-        socket.emit("error", message);
+        const exception = getErrorException(message, err);
+
+        logger.error(
+          `Error occurred during fetching calculations: ${exception.error}`
+        );
+
+        socket.emit("error", exception);
       }
     } else {
-      socket.emit(
-        "error",
-        "Invalid command. Please use operation commands (e.g., 1 + 1, 5 * 3) or the history command."
-      );
+      socket.emit("error", {
+        message,
+        error: UNKNOWN_COMMAND,
+      });
     }
   });
 };

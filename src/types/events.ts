@@ -1,11 +1,14 @@
-import { CalculationResponse } from "./types";
+import {
+  CalculationResponse,
+  CommandErrorException,
+  CommandResponse,
+} from "./types";
 
 export interface ServerToClientEvents {
-  result: (result: CalculationResponse) => void;
-  calculations: (calculations: CalculationResponse[]) => void;
-  error: (errorMessage: string) => void;
+  calculations: (response: CommandResponse) => void;
+  error: (exeption: CommandErrorException) => void;
 }
 
 export interface ClientToServerEvents {
-  message: (calculation: string) => void;
+  message: (message: string) => void;
 }

@@ -1,14 +1,19 @@
 import { lastCalculations, performCalculation } from "./calculator.service";
 import Calculation from "./calculator.model";
+import { calculationResponseData } from "../../../test/testData";
 
 jest.mock("./calculator.model");
 
 describe("calculator service", () => {
   it("should perform and save a valid calculation", async () => {
-    const mockCalculation = "1 + 1";
-    const mockResult = { result: 2, calculation: "1 + 1", date: "", _id: "" };
+    const mockCalculation = calculationResponseData[0];
 
-    const saveMock = jest.fn().mockResolvedValue(mockResult);
+    const mockResult = {
+      message: "1+1",
+      data: [mockCalculation],
+    };
+
+    const saveMock = jest.fn().mockResolvedValue(mockCalculation);
 
     const calculationMock = jest
       .fn()
@@ -16,21 +21,24 @@ describe("calculator service", () => {
 
     (Calculation as any) = calculationMock;
 
-    const result = await performCalculation(mockCalculation);
+    const result = await performCalculation(mockResult.message);
 
     expect(result).toEqual(mockResult);
 
     expect(calculationMock).toHaveBeenCalledWith({
-      calculation: mockCalculation,
-      result: 2,
+      calculation: mockCalculation.calculation,
+      result: mockCalculation.result,
     });
     expect(saveMock).toHaveBeenCalled();
   });
+
   it("should fetch the last 10 calculations", async () => {
-    const mockCalculations = [
-      { result: 2, calculation: "1 + 1", date: "", _id: "" },
-      { result: 3, calculation: "1 + 2", date: "", _id: "" },
-    ];
+    const mockCalculations = calculationResponseData;
+
+    const mockResult = {
+      message: "history",
+      data: mockCalculations,
+    };
 
     const findMock = jest.fn().mockReturnValue({
       sort: jest.fn().mockReturnValue({
@@ -41,9 +49,9 @@ describe("calculator service", () => {
     });
     (Calculation as any).find = findMock;
 
-    const result = await lastCalculations();
+    const result = await lastCalculations(mockResult.message);
 
-    expect(result).toEqual(mockCalculations);
+    expect(result).toEqual(mockResult);
     expect(findMock).toHaveBeenCalled();
   });
 });

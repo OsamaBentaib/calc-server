@@ -1,13 +1,13 @@
 import { evaluate } from "mathjs";
 import logger from "../../../config/logger";
 import Calculation from "./calculator.model";
-import { CalculationResponse } from "../../../types/types";
+import { CalculationResponse, CommandResponse } from "../../../types/types";
 
 export const performCalculation = async (
-  calculation: string
-): Promise<CalculationResponse> => {
+  message: string
+): Promise<CommandResponse> => {
   try {
-    const adjustedCalculation = calculation
+    const adjustedCalculation = message
       .replace(/÷/g, "/")
       .replace(/×/g, "*")
       .replace(/x/g, "*")
@@ -15,21 +15,22 @@ export const performCalculation = async (
 
     const result = evaluate(adjustedCalculation);
 
-    logger.info(`Performed calculation: ${calculation} = ${result}`);
+    logger.info(`Performed calculation: ${message} = ${result}`);
 
-    const newCalculation = new Calculation({ calculation, result });
+    const newCalculation = new Calculation({ calculation: message, result });
 
     const savedCalculation = await newCalculation.save();
 
-    logger.info(
-      `Performed calculation: ${calculation} = ${result} has been saved`
-    );
+    logger.info(`Performed calculation: ${message} = ${result} has been saved`);
 
-    return savedCalculation as CalculationResponse;
+    return {
+      message,
+      data: [savedCalculation as CalculationResponse],
+    };
   } catch (error: unknown) {
     if (error instanceof Error) {
       logger.error(
-        `Error performing calculation: ${calculation}: ${error.message}`
+        `Error performing calculation: ${message}: ${error.message}`
       );
       throw error;
     }
@@ -37,12 +38,19 @@ export const performCalculation = async (
   }
 };
 
-export const lastCalculations = async () => {
+export const lastCalculations = async (
+  message: string
+): Promise<CommandResponse> => {
   try {
-    return (await Calculation.find()
+    const calculations = (await Calculation.find()
       .sort({ date: -1 })
       .limit(10)
       .exec()) as CalculationResponse[];
+
+    return {
+      message,
+      data: calculations,
+    };
   } catch (error: unknown) {
     if (error instanceof Error) {
       logger.error(`Error fetching calculation`);

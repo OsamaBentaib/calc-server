@@ -18,3 +18,155 @@
 {"level":"info","message":"Performed calculation: 1.5*1.5 = 2.25 has been saved","service":"calculator-service"}
 {"level":"info","message":"Calculation result for 1.5*1.5 is {\n  calculation: '1.5*1.5',\n  result: 2.25,\n  date: 2023-07-17T23:15:07.530Z,\n  _id: new ObjectId(\"64b5cb906f6fc897bf2e551b\"),\n  __v: 0\n}","service":"calculator-service"}
 {"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is {\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  _id: new ObjectId(\"64b5ce73900310704f10fa87\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is {\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  _id: new ObjectId(\"64b5cf77900310704f10fa89\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is {\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  _id: new ObjectId(\"64b5d058900310704f10fa8b\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is {\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  _id: new ObjectId(\"64b5d0e6900310704f10fa8d\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is {\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  _id: new ObjectId(\"64b5d10f900310704f10fa8f\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is {\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  _id: new ObjectId(\"64b5d133900310704f10fa91\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation history request","service":"calculator-service"}
+{"level":"info","message":"Calculations response is {\n  _id: new ObjectId(\"64b5d0e6900310704f10fa8d\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d10f900310704f10fa8f\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d058900310704f10fa8b\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d133900310704f10fa91\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5ce73900310704f10fa87\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5cf77900310704f10fa89\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5cb846f6fc897bf2e5519\"),\n  calculation: '1*1,5',\n  result: 1.5,\n  date: 2023-07-17T23:15:07.530Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5cb906f6fc897bf2e551b\"),\n  calculation: '1.5*1.5',\n  result: 2.25,\n  date: 2023-07-17T23:15:07.530Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5ca6e33a5ba06ee64ffa6\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:08:07.189Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5b9a2753efd7bd10911eb\"),\n  calculation: '1200/24',\n  result: 50,\n  date: 2023-07-17T21:25:43.372Z,\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is {\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-18T18:13:38.711Z,\n  _id: new ObjectId(\"64b6d6594c006415946ed3ec\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is {\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-18T18:13:38.711Z,\n  _id: new ObjectId(\"64b6d69e4c006415946ed3ee\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation history request","service":"calculator-service"}
+{"level":"info","message":"Calculations response is {\n  _id: new ObjectId(\"64b6d6594c006415946ed3ec\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-18T18:13:38.711Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b6d69e4c006415946ed3ee\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-18T18:13:38.711Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d0e6900310704f10fa8d\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d10f900310704f10fa8f\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d058900310704f10fa8b\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d133900310704f10fa91\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5ce73900310704f10fa87\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5cf77900310704f10fa89\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5cb846f6fc897bf2e5519\"),\n  calculation: '1*1,5',\n  result: 1.5,\n  date: 2023-07-17T23:15:07.530Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5cb906f6fc897bf2e551b\"),\n  calculation: '1.5*1.5',\n  result: 2.25,\n  date: 2023-07-17T23:15:07.530Z,\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1*2.5","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1*2.5 = 2.5","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1*2.5 = 2.5 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1*2.5 is {\n  calculation: '1*2.5',\n  result: 2.5,\n  date: 2023-07-18T18:13:38.711Z,\n  _id: new ObjectId(\"64b6d6e64c006415946ed3f1\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation history request","service":"calculator-service"}
+{"level":"info","message":"Calculations response is {\n  _id: new ObjectId(\"64b6d69e4c006415946ed3ee\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-18T18:13:38.711Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b6d6594c006415946ed3ec\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-18T18:13:38.711Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b6d6e64c006415946ed3f1\"),\n  calculation: '1*2.5',\n  result: 2.5,\n  date: 2023-07-18T18:13:38.711Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d0e6900310704f10fa8d\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d10f900310704f10fa8f\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d058900310704f10fa8b\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d133900310704f10fa91\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5ce73900310704f10fa87\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5cf77900310704f10fa89\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5cb846f6fc897bf2e5519\"),\n  calculation: '1*1,5',\n  result: 1.5,\n  date: 2023-07-17T23:15:07.530Z,\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1*20-13","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1*20-13 = 8","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1*20-13 = 8 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1*20-13 is {\n  calculation: '1+1*20-13',\n  result: 8,\n  date: 2023-07-18T18:13:38.711Z,\n  _id: new ObjectId(\"64b7c7834c006415946ed3f4\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is {\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-18T18:13:38.711Z,\n  _id: new ObjectId(\"64b7c9924c006415946ed3f6\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1 * 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 * 2 = 3","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 * 2 = 3 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 * 2 is {\n  calculation: '1+1 * 2',\n  result: 3,\n  date: 2023-07-18T18:13:38.711Z,\n  _id: new ObjectId(\"64b7cb464c006415946ed3f8\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation history request","service":"calculator-service"}
+{"level":"info","message":"Calculations response is {\n  _id: new ObjectId(\"64b7cb464c006415946ed3f8\"),\n  calculation: '1+1 * 2',\n  result: 3,\n  date: 2023-07-18T18:13:38.711Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b6d69e4c006415946ed3ee\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-18T18:13:38.711Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b7c9924c006415946ed3f6\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-18T18:13:38.711Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b7c7834c006415946ed3f4\"),\n  calculation: '1+1*20-13',\n  result: 8,\n  date: 2023-07-18T18:13:38.711Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b6d6e64c006415946ed3f1\"),\n  calculation: '1*2.5',\n  result: 2.5,\n  date: 2023-07-18T18:13:38.711Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b6d6594c006415946ed3ec\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-18T18:13:38.711Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d058900310704f10fa8b\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d133900310704f10fa91\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d0e6900310704f10fa8d\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n},{\n  _id: new ObjectId(\"64b5d10f900310704f10fa8f\"),\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-17T23:18:34.806Z,\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is {\n  calculation: '1+1',\n  result: 2,\n  date: 2023-07-18T18:13:38.711Z,\n  _id: new ObjectId(\"64b7d8db4c006415946ed3fb\"),\n  __v: 0\n}","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"error","message":"Error performing calculation: 1+1: Calculation validation failed: calculation: Path `calculation` is required.","service":"calculator-service"}
+{"level":"error","message":"Error occurred during calculation: Calculation validation failed: calculation: Path `calculation` is required.","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"error","message":"Error performing calculation: 1+1: Calculation validation failed: calculation: Path `calculation` is required.","service":"calculator-service"}
+{"level":"error","message":"Error occurred during calculation: Calculation validation failed: calculation: Path `calculation` is required.","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Received calculation history request","service":"calculator-service"}
+{"level":"info","message":"Calculations response is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1 + 1","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1 + 1 is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Received calculation history request","service":"calculator-service"}
+{"level":"info","message":"Calculations response is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2","service":"calculator-service"}
+{"level":"error","message":"Error performing calculation: 1 + 1: calculator_model_1.default is not a constructor","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1 + 1","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1 + 1 is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Received calculation history request","service":"calculator-service"}
+{"level":"info","message":"Calculations response is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1 + 1","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1 + 1 is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Received calculation history request","service":"calculator-service"}
+{"level":"info","message":"Calculations response is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1 + 1","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1 + 1 is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Received calculation history request","service":"calculator-service"}
+{"level":"info","message":"Calculations response is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1 + 1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Server is running on port 3000","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1 + 1","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1 + 1 is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Received calculation history request","service":"calculator-service"}
+{"level":"info","message":"Calculations response is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Received calculation request: 1+1","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2","service":"calculator-service"}
+{"level":"info","message":"Performed calculation: 1+1 = 2 has been saved","service":"calculator-service"}
+{"level":"info","message":"Calculation result for 1+1 is [object Object]","service":"calculator-service"}
+{"level":"info","message":"Received calculation history request","service":"calculator-service"}
+{"level":"info","message":"Calculations response is [object Object]","service":"calculator-service"}

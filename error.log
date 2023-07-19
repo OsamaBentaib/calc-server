@@ -1,2 +1,7 @@
 {"level":"error","message":"Error performing calculation: 1*2,5: Unexpected operator , (char 4)","service":"calculator-service"}
 {"level":"error","message":"Error occurred during calculation: Unexpected operator , (char 4)","service":"calculator-service"}
+{"level":"error","message":"Error performing calculation: 1+1: Calculation validation failed: calculation: Path `calculation` is required.","service":"calculator-service"}
+{"level":"error","message":"Error occurred during calculation: Calculation validation failed: calculation: Path `calculation` is required.","service":"calculator-service"}
+{"level":"error","message":"Error performing calculation: 1+1: Calculation validation failed: calculation: Path `calculation` is required.","service":"calculator-service"}
+{"level":"error","message":"Error occurred during calculation: Calculation validation failed: calculation: Path `calculation` is required.","service":"calculator-service"}
+{"level":"error","message":"Error performing calculation: 1 + 1: calculator_model_1.default is not a constructor","service":"calculator-service"}
